@@ -220,19 +220,68 @@
         </div>
     </div>
 
-    <div id="identityAuthModal" class="fixed inset-0 bg-black/90 backdrop-blur-md z-[80] hidden items-center justify-center p-4">
-        <div class="chiaroscuro-bg p-6 rounded-2xl border border-rose-900/50 max-w-md w-full">
-            <h3 class="text-sm font-black font-cinzel text-rose-400 mb-2 uppercase tracking-widest">🔒 IDENTITY PASSPORT INTERROGATION</h3>
-            <p class="text-[11px] font-mono text-slate-400 leading-relaxed mb-4">
-                The Forensic Laboratory is strictly Token-Gated. Access is restricted exclusively to wallets holding validated sovereign deeds. Please sign to scan the balanceOf state and verify compliance before unlocking top-secret data archives.
+        <div id="identityAuthModal" class="fixed inset-0 bg-black/90 backdrop-blur-md z-[80] hidden items-center justify-center p-4">
+        <div class="chiaroscuro-bg p-6 rounded-2xl border border-rose-900/50 max-w-2xl w-full max-h-[90vh] flex flex-col">
+            <h3 class="text-sm font-black font-cinzel text-rose-400 mb-2 uppercase tracking-widest flex-shrink-0">🔒 IDENTITY PASSPORT & SYSTEM GUIDE</h3>
+            
+            <p class="text-[10px] font-mono text-slate-400 leading-relaxed mb-3 flex-shrink-0">
+                The Forensic Laboratory is strictly Token-Gated. Please review the Sovereign Dashboard operational guide before executing the scan.
             </p>
-            <div class="flex gap-2">
-                <button onclick="closeIdentityAuthModal()" class="w-1/2 bg-stone-950 text-stone-400 font-mono text-[10px] py-2.5 rounded uppercase border border-stone-800 cursor-pointer">ABORT SCAN</button>
-                <button onclick="executeGatewayUnlock(event)" class="w-1/2 bg-rose-950/60 text-rose-300 border border-rose-700 font-mono font-bold text-[10px] py-2.5 rounded uppercase hover:bg-rose-900 cursor-pointer">EXECUTE DEED SCAN 🧬</button>
+
+            <div class="bg-black/80 border border-stone-800 rounded-xl p-4 mb-4 overflow-y-auto scroll-dark text-[10px] font-mono text-slate-300 space-y-5 flex-grow shadow-[inset_0_0_20px_rgba(0,0,0,0.9)] h-72">
+                
+                <div>
+                    <h4 class="text-amber-500 font-black uppercase mb-1.5 border-b border-stone-800 pb-1">Phase 1: Sovereign Awakening</h4>
+                    <ul class="space-y-1.5 list-none pl-1">
+                        <li><span class="text-rose-400 font-bold">Action:</span> Connect Web3 wallet and mint the Deed NFT on the Base network.</li>
+                        <li><span class="text-rose-400 font-bold">Fact:</span> Automatically deploys a Token Bound Account (TBA - ERC-6551) via Lazy Initialization. The dev team is permanently stripped of control with No Backdoors.</li>
+                        <li><span class="text-rose-400 font-bold">Outcome:</span> Absolute ownership and operational control over metadata and media transfer strictly to the holder.</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-amber-500 font-black uppercase mb-1.5 border-b border-stone-800 pb-1">Phase 2: Deed Ascension</h4>
+                    <ul class="space-y-1.5 list-none pl-1">
+                        <li><span class="text-rose-400 font-bold">9:16 Video Preview Slots:</span> Designed strictly for viewing Nova sample templates. No data fields.</li>
+                        <li><span class="text-rose-400 font-bold">Premium 4K Production:</span> Select a template version → Contact the Architect via social links → Submit 5 source images. The Architect custom-engineers a 4K Branding Video and 5 profiles with personalized cryptographic DNA engraved at <span class="text-red-400 font-bold bg-red-950/40 px-1 rounded">3% Opacity</span> for forensic proof.</li>
+                        <li><span class="text-rose-400 font-bold">Nova Input Fields:</span> Enter 3 fields: Token ID, Identity DNA, and Hidden Property (Chrono-Map) with links uploaded via Irys SDK Arweave.</li>
+                        <li class="mt-2 text-[9px] text-red-400 border border-red-900/50 bg-red-950/20 p-2 rounded uppercase font-bold">
+                            CRITICAL WARNING: identityDNA and hiddenProperty are permanently Immutable (cannot be changed). Media URIs (front, back, video) can be updated for free (gas only) post-Nova.
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-amber-500 font-black uppercase mb-1.5 border-b border-stone-800 pb-1">Phase 3: Forensic DNA Lab</h4>
+                    <ul class="space-y-1.5 list-none pl-1">
+                        <li><span class="text-rose-400 font-bold">Action:</span> Access via the hidden trigger under the "Uncompromised Integrity Protocol" section.</li>
+                        <li><span class="text-rose-400 font-bold">Fact:</span> On-chain verification restricts access exclusively to the verified Deed holder.</li>
+                        <li><span class="text-rose-400 font-bold">Outcome:</span> Instantly cross-checks personal DNA footprints to deliver court-admissible evidence in identity theft and deepfake litigation within 1 week.</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-amber-500 font-black uppercase mb-1.5 border-b border-stone-800 pb-1">Phase 4: Governance Panel</h4>
+                    <ul class="space-y-1.5 list-none pl-1">
+                        <li><span class="text-rose-400 font-bold">Council Panel:</span> Dashboard UI displays ONLY the "Digital live vote tally" tracking towards the 199/333 Absolute Quorum. Opening a vote (Create Proposal) must be executed by a Council Member via BaseScan directly. (Deeds #1-10 have Council rights + dividends; #50 and #100 have Council rights but zero dividends).</li>
+                        <li><span class="text-rose-400 font-bold">Secondary Royalties:</span> Automated 7-unit mathematical split: Imperial Reserve (Treasury) 3/7 (~42.8%) / Architect 2/7 (~28.5%) / Council Fund 2/7 (~28.5%).</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-amber-500 font-black uppercase mb-1.5 border-b border-stone-800 pb-1">Phase 5: Treasury Liquidation</h4>
+                    <ul class="space-y-1.5 list-none pl-1">
+                        <li><span class="text-rose-400 font-bold">Sovereign Support (85% Remedy):</span> During a catastrophic market collapse (Black Swan), holders can trigger the "Sovereign Support" command to burn the NFT. The contract programmatically liquidates and transfers 85% of the average reserve pool directly back to the holder's wallet (15% retained for stability: 12% Reserve / 3% Council).</li>
+                        <li><span class="text-rose-400 font-bold">The Re-Mint Loop:</span> Burned tokens map to address(0). The Architect can inject new Metadata into the vacant Token ID and execute a Re-mint to resell at premium pricing. Split: 60% Imperial Reserve / 30% Council Pool / 10% Architect.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="flex gap-2 flex-shrink-0">
+                <button onclick="closeIdentityAuthModal()" class="w-1/2 bg-stone-950 text-stone-400 font-mono text-[10px] py-3 rounded uppercase border border-stone-800 cursor-pointer hover:bg-stone-900 transition-colors">ABORT SCAN</button>
+                <button onclick="executeGatewayUnlock(event)" class="w-1/2 bg-rose-950/60 text-rose-300 border border-rose-700 font-mono font-bold text-[10px] py-3 rounded uppercase hover:bg-rose-900 cursor-pointer transition-colors shadow-[0_0_15px_rgba(153,27,27,0.4)]">AGREE & EXECUTE SCAN 🧬</button>
             </div>
         </div>
     </div>
-
     <div id="novaWarnModal" class="fixed inset-0 bg-black/90 backdrop-blur-md z-[80] hidden items-center justify-center p-4">
         <div class="chiaroscuro-bg p-6 rounded-2xl border border-red-900/60 max-w-lg w-full shadow-[0_0_50px_rgba(153,27,27,0.4)]">
             <h3 class="text-sm font-black font-cinzel text-red-500 mb-3 border-b border-stone-900 pb-2 uppercase tracking-wider">
